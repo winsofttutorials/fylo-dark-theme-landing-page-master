@@ -76,7 +76,6 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
   display: flex;
-
   flex-direction: column;
   min-height: 100vh;
   background-image: url("./images/bg-curvy-desktop.svg");
@@ -168,6 +167,7 @@ nav ul li a:hover {
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   margin: auto;
+  line-height: 20px;
 }
 
 .row {
@@ -223,6 +223,62 @@ nav ul li a:hover {
   color: var(--White);
 }
 
+/* ------------------Testimonials---------------- */
+
+.testimonials {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  position: relative;
+  padding: 70px 9% 120px;
+}
+
+.quoteImg {
+  position: absolute;
+  left: 150px;
+}
+
+.test1 {
+  background-color: var(--Dark-Blue-3);
+  margin: 20px;
+  padding: 30px 20px 15px;
+  z-index: 2;
+  border-radius: 10px;
+  color: var(--White);
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.test1 p {
+  font-family: "Raleway", sans-serif;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.test1Text {
+  margin-bottom: 20px;
+}
+
+.userInfo h3 {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.userInfo p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.profileImg {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -230,4 +286,135 @@ nav ul li a:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  nav {
+    padding: 10px 4%;
+  }
+  .logo {
+    width: 70px;
+  }
+
+  nav ul li {
+    margin-left: 12px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+  main {
+    padding: 20px;
+  }
+
+  .maincontent {
+    padding: 0;
+    min-height: unset;
+    background-image: url(./images/bg-curvy-mobile.svg);
+  }
+
+  .getStarted {
+    width: 100%;
+    padding: 0;
+  }
+
+  .title-info {
+    font-size: 13px;
+    max-width: 270px;
+  }
+  .bgImage {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+    max-width: 300px;
+    line-height: 30px;
+  }
+  .featuresFrame {
+    padding: 100px 10px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 100%;
+  }
+
+  .features-content {
+    width: 100%;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    max-width: 370px;
+  }
+
+  .row {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col1 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .col1 h2 {
+    font-size: 18px;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+
+  .col1 p {
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  .col1 a {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+  .col1 a img {
+    width: 12px;
+  }
+
+  .productiveImg {
+    width: 270px;
+    margin: auto;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: var(--Dark-Blue-1);
+  }
+
+  .test1 {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+
+  .test1Text {
+    max-width: 300px;
+    font-size: 12px;
+  }
+
+  .quoteImg {
+    left: 5px;
+    margin-top: 8px;
+    width: 20px;
+  }
+
+  .userInfo h3 {
+    font-size: 14px;
+  }
+  .userInfo p {
+    font-size: 10px;
+  }
 }
