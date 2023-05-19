@@ -662,4 +662,7 @@ footer {
     margin: auto;
     width: 100%;
   }
+  .attribution a {
+    font-size: 10px;
+  }
 }
