@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <script
+      src="https://kit.fontawesome.com/615bcdb6c2.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="icon"
       type="image/png"
@@ -173,21 +176,91 @@
       </section>
 
       <footer>
+        <div class="getSignedUp">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <div class="subscribe">
+            <input type="text" placeholder="email@example.com" id="userInput" />
+            <button
+              type="button"
+              class="subscribe-btn"
+              onclick="validateInput()"
+            >
+              Get Started For Free
+            </button>
+            <p id="emailError"></p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" class="footerLogo" />
+          </div>
+          <div class="footer-info-frame">
+            <div class="leftFooter">
+              <div class="address">
+                <img
+                  src="./images/icon-location.svg"
+                  alt="location"
+                  class="locationImg"
+                />
+                <p class="addressInfo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+              <div class="phoneAddress">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-phone.svg" alt="phone" />
+                      +1-543-123-4567</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon-email.svg" alt="mail" />
+                      example@fylo.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="rightFooter">
+              <div class="left-contacts">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="left-contacts">
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </ul>
+              </div>
+              <div class="socialIcons">
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by <a href="#">IFIDI W.EPHOD</a>.
         </p>
       </footer>
     </main>
-
-    Get early access today It only takes a minute to sign up and our free
-    starter tier is extremely generous. If you have any questions, our support
-    team would be happy to help you. Get Started For Free Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua +1-543-123-4567 example@fylo.com About Us Jobs
-    Press Blog Contact Us Terms Privacy
 
     <script src="script.js"></script>
   </body>

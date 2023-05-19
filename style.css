@@ -226,10 +226,10 @@ nav ul li a:hover {
 /* ------------------Testimonials---------------- */
 
 .testimonials {
-  background-color: var(--Dark-Blue);
+  background-color: var(--Dark-Blue-1);
   display: flex;
   position: relative;
-  padding: 70px 9% 120px;
+  padding: 70px 9% 300px;
 }
 
 .quoteImg {
@@ -279,6 +279,173 @@ nav ul li a:hover {
   margin-right: 10px;
 }
 
+footer {
+  background-color: var(--Dark-Blue-2);
+  position: relative;
+}
+
+.getSignedUp {
+  background-color: var(--Dark-Blue-3);
+  width: 650px;
+  margin-top: -70px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.getSignedUp h2 {
+  color: var(--White);
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 30px;
+}
+
+.getSignedUp p {
+  font-size: 12px;
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+  margin: 20px auto;
+}
+
+.subscribe input {
+  width: 350px;
+  padding: 12px 18px;
+  border-radius: 24px;
+  outline: none;
+  border: 0;
+  margin-right: 10px;
+}
+
+::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  color: var(--Dark-Blue);
+}
+
+.subscribe-btn {
+  padding: 13px 37px;
+  background-color: var(--Blue);
+  color: var(--White);
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--Cyan);
+}
+
+#emailError {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+/* -------------------footer-info----------------------- */
+
+.footer-info {
+  padding: 0 8%;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.footerLogo {
+  margin-top: 140px;
+  margin-bottom: 50px;
+  width: 100px;
+}
+
+.footer-info-frame {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.leftFooter,
+.rightFooter {
+  display: flex;
+  flex-basis: 46%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+}
+
+.addressInfo {
+  max-width: 300px;
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.locationImg {
+  margin-right: 20px;
+}
+
+.phoneAddress ul li a img {
+  width: 12px;
+  margin-right: 15px;
+}
+
+.footer-info ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.rightFooter {
+  padding-left: 30px;
+}
+
+.left-contacts ul li a:hover {
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-info span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footer-info span:hover {
+  color: var(--Cyan);
+  border-color: var(--Cyan);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -286,6 +453,7 @@ nav ul li a:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  color: var(--White);
 }
 
 @media (max-width: 375px) {
@@ -389,7 +557,8 @@ nav ul li a:hover {
 
   .testimonials {
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 50px 20px 150px;
+
     background-color: var(--Dark-Blue-1);
   }
 
@@ -406,7 +575,7 @@ nav ul li a:hover {
   }
 
   .quoteImg {
-    left: 5px;
+    left: 15px;
     margin-top: 8px;
     width: 20px;
   }
@@ -416,5 +585,78 @@ nav ul li a:hover {
   }
   .userInfo p {
     font-size: 10px;
+  }
+
+  footer {
+    width: 100%;
+  }
+  .getSignedUp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  .addressInfo {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 14px;
+  }
+
+  .subscribe-btn {
+    padding: 15px;
+  }
+
+  #emailError {
+    margin-top: -60px;
+  }
+  .footer-info {
+    padding: 0;
+  }
+
+  .footer-info .footerLogo {
+    margin-top: 350px;
+    width: 180px;
+    margin-left: 15px;
+  }
+  .footer-info-frame {
+    flex-direction: column;
+  }
+
+  .leftFooter,
+  .rightFooter {
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .left-contacts {
+    margin-bottom: 20px;
+  }
+
+  .phoneAddress ul li a,
+  .left-contacts ul li a {
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .socialIcons {
+    margin: auto;
+  }
+
+  .attribution {
+    margin: auto;
+    width: 100%;
   }
 }
