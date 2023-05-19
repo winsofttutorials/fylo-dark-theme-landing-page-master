@@ -9,6 +9,7 @@ function validateInput() {
   } else {
     emailError.innerHTML = "";
     emailError.style.color = "";
+    userInput.value = "";
     return true;
   }
 }
