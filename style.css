@@ -1,18 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Raleway:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", "Raleway", sans-serif;
 }
 
 :root {
   /* (intro and email sign up background) */
   --Dark-Blue: hsl(217, 28%, 15%);
   /* (main background) */
-  --Dark-Blue: hsl(218, 28%, 13%);
+  --Dark-Blue-1: hsl(218, 28%, 13%);
   /* (footer background) */
-  --Dark-Blue: hsl(216, 53%, 9%);
+  --Dark-Blue-2: hsl(216, 53%, 9%);
   /* (testimonials background) */
-  --Dark-Blue: hsl(219, 30%, 18%);
+  --Dark-Blue-3: hsl(219, 30%, 18%);
 
   /* (inside call-to-action gradient) */
   --Cyan: hsl(176, 68%, 64%);
@@ -24,10 +27,207 @@
   --White: hsl(0, 0%, 100%);
 }
 
+body {
+  height: 100vh;
+  font-weight: 400 800;
+  font-family: "Open Sans", "Raleway", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background-color: var(--Dark-Blue);
+}
+
+/* ----------------NAV START---------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 4%;
+}
+
+.logo {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--White);
+}
+
+.maincontent {
+  text-align: center;
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("./images/bg-curvy-desktop.svg");
+  background-size: 100% 52%;
+  background-position: bottom -5% right 10px;
+  background-repeat: no-repeat;
+}
+
+.bgImage {
+  display: block;
+  margin: 0px auto 10px;
+  width: 400px;
+}
+
+.getStarted {
+  text-align: center;
+}
+
+.title {
+  color: var(--White);
+  max-width: 450px;
+  margin: 20px auto;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 35px;
+  padding-top: 20px;
+}
+
+.title-info {
+  color: var(--White);
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  max-width: 420px;
+  margin: 0 auto 25px;
+  line-height: 20px;
+}
+
+.start-btn {
+  padding: 9px 57px;
+  background-color: var(--Blue);
+  color: var(--White);
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  transition: 0.5s;
+}
+
+.start-btn:hover {
+  background-color: var(--Cyan);
+}
+
+.featuresFrame {
+  background-color: var(--Dark-Blue-1);
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: flex-start;
+  width: 60%;
+  gap: 40px;
+  margin: auto;
+}
+
+.features-content {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto 40px;
+}
+
+.features-content img {
+  width: 50px;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.features-content p {
+  font-size: 14px;
+  color: var(--White);
+  max-width: 380px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  background-color: var(--Dark-Blue-1);
+  padding: 30px 70px;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.col1 {
+  flex-basis: 50%;
+  color: var(--White);
+  padding-left: 40px;
+}
+
+.productiveImg {
+  display: block;
+  text-align: right;
+}
+
+.col1 h2 {
+  font-family: "Raleway", sans-serif;
+  max-width: 200px;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.col1 p {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  max-width: 450px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.col1 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--Cyan);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+.col1 a img {
+  margin-left: 6px;
+}
+
+.col1 a:hover {
+  text-decoration: underline;
+  color: var(--White);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
