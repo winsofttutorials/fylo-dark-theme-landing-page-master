@@ -661,6 +661,8 @@ footer {
   .attribution {
     margin: auto;
     width: 100%;
+    text-align: center;
+    color: var(--White);
   }
   .attribution a {
     font-size: 10px;
